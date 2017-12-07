@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<system name="propeller">
+  
+  <property>propulsion/engine/propeller-pitch</property>
+  
+  <channel name="feathering">
+    
+    
+    <kinematic name="Propeller Pitch Norm">
+                <input>propulsion/engine/propeller-pitch</input>
+                <traverse>
+                    <setting>
+                        <position>0</position>
+                        <time>0</time>
+                    </setting>
+                    <setting>
+                        <position>1</position>
+                        <time>5</time>
+                    </setting>
+                </traverse>
+                </kinematic>
+    
+    
+    <!-- setting propeller feathering property -->
+    <switch name="feathering">
+      <default value="0"/>
+      <test logic="AND" value="1">
+	propulsion/engine/propeller-pitch lt 0.20
+      </test>
+      <output>/controls/engines/engine[0]/propeller-feather</output>
+    </switch>
+    
+   </channel>
+</system>
+
+
+

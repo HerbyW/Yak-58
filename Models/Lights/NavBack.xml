@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+	
+	  <path>NavBack.ac</path>
+
+ <animation>
+  <type>select</type>
+  <object-name>NavBack</object-name>
+  <condition>
+   <property>sim/multiplay/generic/int[8]</property>
+  </condition>
+ </animation>
+
+
+</PropertyList>

@@ -1,0 +1,53 @@
+<PropertyList>
+	<title>Yak-58 by Herbert Wagner Version 2.0.2</title>
+	<line></line>
+	<key>
+		<name>d</name>
+		<desc>Open/close door</desc>
+	</key>
+	<key>
+		<name>S</name>
+		<desc>Prepare for Start Up</desc>
+	</key>
+	<key>
+		<name>s</name>
+		<desc>Engines start up</desc>
+	</key>
+	<key>
+    <name>&lt;</name>
+    <desc>Change Pilot View</desc>
+  </key>
+	
+	
+	<line>Startup procedure:</line>
+	<line>1.Turn ON battery and generators and primer</line>
+	<line>2.Turn ON master avionics button (right middle wall panel)</line>
+	<line>3.Turn ON NWS</line>
+	<line>4.Turn ON required lights and pitot heat</line>
+	<line>5.Mixture and Propeller Pitch to max, move them a little bit</line>	
+	<line>6.Turn ON magnetos, continue turning the knob for starter</line>	
+	<text>
+See "Equipment/Fuel and Payload" menu to adjust aircraft weights. Being able to adjust the weight of each passenger,
+take a tip: The rear seats works fine with kids or baggage, it's not recomended to fly with 6 adult passengers, due to balance issues.
+
+
+Performance
+
+    Maximum speed: 300 km/h (162 knots, 186 mph)
+    Cruise speed: 285 km/h (154 knots, 177 mph)
+    Range: 1,000 km (539 nmi, 621 mi)
+    Service ceiling: 4,000 m (13,125 ft)
+    Empty weight: 1,270 kg (2,800 lb)
+    Loaded weight: 2,125 kg (4,685 lb).
+
+The Yak-58 has a constant-speed variable pitch pusher propeller; so, you can increase propeller pitch to get more airspeed, but with a loss of engine RPM and power.
+
+Cruise: Manifold Pressure to 20-23 and Propeller-Pitch to 0.42
+
+About knobs, use scroll mouse for gross adjustments, and left-central buttons for fine tunning. When setting radio frequencies,
+the mouse scroll will adjust integral numbers, and buttons will tune decimals.
+
+Cockpit is a modified version from FlightGear Cessna 337.
+</text>
+
+</PropertyList>

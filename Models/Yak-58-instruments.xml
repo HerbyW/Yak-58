@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<!--
+Copyright (C) 2010 Fernando Espinosa
+
+This program is free software; you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation; either version 2 of the License, or 
+(at your option) any later version. 
+
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+
+You should have received a copy of the GNU General Public License 
+along with this program; if not, write to the Free Software 
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA. 
+-->
+
+<PropertyList>
+
+ <model>
+  <name>Autopilot Helper</name>
+  <path>Aircraft/Yak-58/Models/Instruments/ap/ap-fg.xml</path>
+  <offsets>
+      <x-m>-0.972</x-m>
+      <y-m> -0.246 </y-m>
+      <z-m>  0.24 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Set Hight</name>
+  <path>Aircraft/Yak-58/Models/Instruments/alt-set/alt-set.xml</path>
+  <offsets>
+      <x-m>-0.973</x-m>
+      <y-m> -0.04 </y-m>
+      <z-m>  0.255 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Set Pitch</name>
+  <path>Aircraft/Yak-58/Models/Instruments/alt-set/pitch-set.xml</path>
+  <offsets>
+      <x-m>-0.976</x-m>
+      <y-m> -0.045 </y-m>
+      <z-m>  0.40 </z-m>
+  </offsets>
+ </model>  
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Compass/Compass.xml</path>
+	<offsets>
+	<x-m>-1.07</x-m>
+	<y-m> 0    </y-m>
+	<z-m> 0.370</z-m>
+	</offsets>
+</model>
+
+<!-- LEFT PANEL -->
+
+<model>
+    <path>Aircraft/Yak-58/Models/Instruments/achs-2/achs-2.xml</path>
+    <offsets>
+      <x-m>-0.963</x-m>
+	<y-m>-0.518</y-m>
+	<z-m> 0.15</z-m>
+    </offsets>
+  </model>
+  
+    <model>
+    <path>Aircraft/Yak-58/Models/Instruments/achs-2/timeset.xml</path>
+    <offsets>
+      <x-m>-0.963</x-m>
+	<y-m>-0.518</y-m>
+	<z-m> 0.15</z-m>
+    </offsets>
+  </model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/tnv-15/tnv-15.xml</path>
+	<offsets>
+		<x-m>-0.97</x-m>
+		<y-m>-0.495</y-m>
+		<z-m> 0.195</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/TC/5550-8340N5L.xml</path>
+	<offsets>
+		<x-m>-0.975</x-m>
+		<y-m>-0.5225</y-m>
+		<z-m> 0.081</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/ASI/EA-5174.xml</path>
+	<offsets>
+		<x-m>-0.977</x-m>
+		<y-m>-0.438</y-m>
+		<z-m> 0.182</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/ADF/KI-227.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m>-0.438</y-m>
+		<z-m> 0.094</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/AI/EA-5000F6.xml</path>
+	<offsets>
+		<x-m>-0.977</x-m>
+		<y-m>-0.337</y-m>
+		<z-m> 0.189</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/HI/RCA15AK.xml</path>
+	<offsets>
+		<x-m>-0.975</x-m>
+		<y-m>-0.337</y-m>
+		<z-m> 0.094</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Altimeter/EA-401A.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m>-0.236</y-m>
+		<z-m> 0.182</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/VSI/VSI.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m>-0.236</y-m>
+		<z-m> 0.0935</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/VOR/KI-206-nav1.xml</path>
+	<offsets>
+		<x-m>-0.975</x-m>
+		<y-m>-0.135</y-m>
+		<z-m> 0.214</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/VOR/KI-206-nav2.xml</path>
+	<offsets>
+		<x-m>-0.975</x-m>
+		<y-m>-0.135</y-m>
+		<z-m> 0.126</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/RadarAltimeter/BendixKing_KI250.xml</path>
+	<offsets>
+		<x-m>-0.975</x-m>
+		<y-m>-0.135</y-m>
+		<z-m> 0.03809</z-m>
+	</offsets>
+</model>
+
+	<!-- RIGHT PANEL -->
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/3rounds/ManifoldPressure.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m> 0.137</y-m>
+		<z-m> 0.215</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/RPM/rpm1.xml</path>
+	<offsets>
+		<x-m>-0.973</x-m>
+		<y-m> 0.137</y-m>
+		<z-m> 0.126</z-m>
+		<heading-deg>180</heading-deg>
+		<pitch-deg>1</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/3rounds/FuelFlow.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m> 0.137</y-m>
+		<z-m> 0.038</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/egt/egt.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m> 0.2315</y-m>
+		<z-m> 0.038</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/egt/egt-red-lamp.xml</path>
+	<offsets>
+		<x-m>-0.989</x-m>
+		<y-m> 0.2315</y-m>
+		<z-m> 0.018</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Hobbs/HobbsMeter.xml</path>
+	<offsets>
+		<x-m>-0.972</x-m>
+		<y-m> 0.288</y-m>
+		<z-m> 0.2315</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Fuel-CHT-Oil/Fuel-Oil.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m> 0.288</y-m>
+		<z-m> 0.191</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Fuel-CHT-Oil/CHT-Oil.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m> 0.288</y-m>
+		<z-m> 0.135</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Vacuum/Vacuum.xml</path>
+	<offsets>
+		<x-m>-0.976</x-m>
+		<y-m> 0.446</y-m>
+		<z-m> 0.177</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Altimeter/EA-401A.xml</path>
+	<offsets>
+		<x-m>-0.977</x-m>
+		<y-m> 0.446</y-m>
+		<z-m> 0.0955</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Amp/Amp.xml</path>
+	<offsets>
+		<x-m>-0.975</x-m>
+		<y-m> 0.516</y-m>
+		<z-m> 0.1645</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Volt/Volt.xml</path>
+	<offsets>
+		<x-m>-0.975</x-m>
+		<y-m> 0.516</y-m>
+		<z-m> 0.1215</z-m>
+	</offsets>
+</model>
+
+
+	<!-- RADIO STACK & PEDESTAL -->
+
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/AudioPanel/BendixKing_KMA24.xml</path>
+	<offsets>
+		<x-m>-0.973</x-m>
+		<y-m> 0.001</y-m>
+		<z-m> 0.206</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Radio/BendixKing_KX155_navcom1.xml</path>
+	<offsets>
+		<x-m>-0.973</x-m>
+		<y-m> 0.001</y-m>
+		<z-m> 0.163</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Radio/BendixKing_KX155_navcom2.xml</path>
+	<offsets>
+		<x-m>-0.973</x-m>
+		<y-m> 0.001</y-m>
+		<z-m> 0.111</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/DME/BendixKing_KN62A.xml</path>
+	<offsets>
+		<x-m>-0.973</x-m>
+		<y-m> 0.001</y-m>
+		<z-m> 0.068</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/ADF/BendixKing_KR87.xml</path>
+	<offsets>
+		<x-m>-0.973</x-m>
+		<y-m> 0.001</y-m>
+		<z-m> 0.034</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Transponder/BendixKing_KT76A.xml</path>
+	<offsets>
+		<x-m>-0.973</x-m>
+		<y-m> 0.001</y-m>
+		<z-m>-0.004</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/ELT/ArtexELT.xml</path>
+	<offsets>
+		<x-m>-0.977</x-m>
+		<y-m>-0.485</y-m>
+		<z-m>-0.110</z-m>
+	</offsets>
+</model>
+
+<!--
+<model>
+	<path>Aircraft/Yak-58/Models/Instruments/Navomatic/Navomatic400A.xml</path>
+	<offsets>
+		<x-m>-0.848</x-m>
+		<y-m> 0.001</y-m>
+		<z-m>-0.350</z-m>
+		<pitch-deg>-38</pitch-deg>
+	</offsets>
+</model>
+-->
+  <!-- Version Number -->
+  
+  <text>
+    <name>Version</name>
+     <offsets>
+      <x-m>-0.976</x-m>
+      <y-m> 0.055 </y-m>
+      <z-m>  0.25 </z-m>
+     </offsets>
+    <alignment>center-center</alignment>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">text-value</type>
+    <property type="string">sim/multiplay/generic/string[1]</property>
+    <format type="string">%.7s</format>
+    <font>arial_black.txf</font>
+    <character-size>0.01</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+  </text>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Version</object-name>         
+    <emission>
+      <red>0.35</red>
+      <green>0.35</green>
+      <blue>0.50</blue>
+    </emission>        
+  </animation>
+ 
+
+</PropertyList>

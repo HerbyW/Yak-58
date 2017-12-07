@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<default>
+	<menu n="100">
+		<label>Yak-58</label>
+		<enabled type="bool">true</enabled>
+		<item n="1">
+			<label>Autostart</label>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/model/autostart</property>
+			</binding>
+		</item>
+		<item n="2">
+			<label>Utility</label>
+			<binding>
+				<command>dialog-show</command>
+				<dialog-name>utility-dialog</dialog-name>
+			</binding>
+		</item>
+		<item n="3">
+			<label>Checklists</label>
+			<binding>
+				<command>dialog-show</command>
+				<dialog-name>checklists</dialog-name>
+			</binding>
+		</item>
+		<item n="4">
+			<label>Yokes On/Off</label>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/yokes-visible</property>
+			</binding>
+		</item>
+		<item n="5">
+			<label>Select Livery</label>
+			<binding>
+				<command>nasal</command>
+				<script>aircraft.livery.dialog.toggle()</script>
+			</binding>
+		</item>
+	</menu>
+	
+</default>
+
+</PropertyList>

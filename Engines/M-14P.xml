@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+  File:     M-14P.xml
+  Author:   Aero-Matic v 0.82
+
+  Inputs:
+    name:           M-14P
+    type:           piston
+    power:          360 hp
+    augmented?      no
+    injected?       no
+    
+    http://motorstarna.com/m14p-engines/technical-information/76-specifications
+-->
+
+<piston_engine name="M-14P">
+  <minmp unit="INHG">        6.8 </minmp><!-- 10.0 neu:6.8 -->
+  <maxmp unit="INHG">        30.0 </maxmp><!-- 29.94 -->
+  <displacement unit="LTR"> 15.0 </displacement><!--30.0 neu:10.0 -->
+   <bsfc unit="LBS/HP*HR"> 0.28 </bsfc><!-- 0.44 neu:0.37 -->
+  <maxhp>        360.00 </maxhp>  <!-- 560 -->
+  <cylinders> 9 </cylinders>
+ <cylinder-head-mass unit="KG"> 7 </cylinder-head-mass>     
+  <cycles>         4.0 </cycles>
+  <idlerpm>      700.0 </idlerpm>
+  <maxrpm>      2950.0 </maxrpm> 
+  <maxthrottle>    1.0 </maxthrottle>
+  <minthrottle>    0.2 </minthrottle>
+  <sparkfaildrop>  0.1 </sparkfaildrop>
+  <bore unit="IN"> 4.125 </bore>
+  <stroke unit="IN"> 5.125 </stroke>
+  <compression-ratio> 6.3 </compression-ratio>  
+  <volumetric-efficiency> 0.85 </volumetric-efficiency>
+  <man-press-lag> 0.1 </man-press-lag>
+  <static-friction  unit="HP"> 1.80 </static-friction>
+  <starter-torque> 288.00 </starter-torque>
+  <starter-rpm> 1400 </starter-rpm>
+  <cooling-factor> 0.6 </cooling-factor>
+</piston_engine>

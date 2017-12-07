@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>egt.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Face</object-name>
+  <object-name>Needle</object-name>
+  <emission>
+         <red>0.7</red>
+         <green>0.7</green>
+         <blue>0.7</blue>
+         <factor-prop>controls/lighting/panel-norm</factor-prop>  <!-- <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop> -->
+     </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Needle</object-name>
+  <property>engines/engine[0]/egt-degf</property>
+  <interpolation>
+      <entry>
+        <ind>1200</ind>    
+        <dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>1300</ind>    
+        <dep>-10.5</dep>
+      </entry>
+      <entry>
+        <ind>1400</ind>    
+        <dep>6.5</dep>
+      </entry>
+      <entry>
+        <ind>1500</ind>    
+        <dep>25</dep>
+      </entry>
+      <entry>
+        <ind>1600</ind>    
+        <dep>43</dep>
+      </entry>
+      <entry>
+        <ind>1700</ind>     
+        <dep>61</dep>
+      </entry>
+    </interpolation>
+  
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>-0.012</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+
+ </animation>
+ 
+     <animation>
+  <type>scale</type>
+  <object-name>Face</object-name>
+  <object-name>Needle</object-name>
+  <property>sim/signals/fdm-initialized</property>
+  <offset>1</offset>
+  <x-max>1.65</x-max>
+  <y-max>1.65</y-max>
+  <z-max>1.65</z-max>
+  <x-factor>1.65</x-factor>
+  <y-factor>1.65</y-factor>
+  <z-factor>1.65</z-factor>
+ </animation>
+
+</PropertyList>
+
+

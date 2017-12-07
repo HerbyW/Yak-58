@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+<PropertyList>
+  
+  <path>yak58-lights.ac</path>
+  
+  <!-- Lamps-->
+  
+   <animation>
+     <type>material</type>
+     <object-name>spot_glass3.001</object-name>
+     <emission>
+       <factor-prop>sim/multiplay/generic/int[10]</factor-prop>
+       <red>   1 </red>
+       <green> 1 </green>
+       <blue>  0.8 </blue>
+     </emission>
+   </animation>
+   
+   <animation>
+     <type>material</type>
+     <object-name>spot_glass3</object-name>
+     <emission>
+       <factor-prop>sim/multiplay/generic/int[9]</factor-prop>
+       <red>   1 </red>
+       <green> 1 </green>
+       <blue>  1 </blue>
+     </emission>
+   </animation>
+  
+  <!-- No preview for fgrun-->
+  <animation>
+    <object-name>LightVolumeML</object-name>
+    <object-name>LightVolumeMT</object-name>
+    <object-name>SpotLL</object-name> 
+    <object-name>SpotLT</object-name>
+    <object-name>Cone-textureLM</object-name>
+    <object-name>Cone-textureTM</object-name>
+    <nopreview/>
+  </animation>
+    
+    <!-- Special Shaders -->
+    
+    <animation>
+      <type>noshadow</type>      
+    <object-name>LightVolumeML</object-name>
+    <object-name>LightVolumeMT</object-name>
+    <object-name>SpotLL</object-name> 
+    <object-name>SpotLT</object-name>
+    <object-name>Cone-textureLM</object-name>
+    <object-name>Cone-textureTM</object-name>
+    </animation>
+    
+    <!-- working for Rembrandt -->
+    <effect>
+      <inherits-from>Effects/model-transparent</inherits-from>
+      <object-name>SpotLL</object-name> 
+    <object-name>SpotLT</object-name>
+    <object-name>Cone-textureLM</object-name>
+    <object-name>Cone-textureTM</object-name>
+    </effect>
+    
+    <animation>
+      <type>select</type>
+      <object-name>SpotLL</object-name>
+      <condition>
+	<and>
+	  <not>
+	    <property>/sim/rendering/rembrandt/enabled</property>
+	  </not>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <less-than>
+	    <property>sim/multiplay/generic/float[2]</property>
+	    <value>5</value>
+	  </less-than>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[2]</property>
+	    <value>-0.1</value>
+	  </greater-than>
+	</and>
+      </condition>
+    </animation>
+    
+    <animation>
+      <type>select</type>
+      <object-name>SpotLT</object-name>
+      <condition>
+	<and>
+	  <not>
+	    <property>/sim/rendering/rembrandt/enabled</property>
+	  </not>
+	  <property>sim/multiplay/generic/int[10]</property>
+	  <less-than>
+	    <property>sim/multiplay/generic/float[2]</property>
+	    <value>5</value>
+	  </less-than>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[2]</property>
+	    <value>-0.1</value>
+	  </greater-than>
+	</and>
+      </condition>
+    </animation>
+    
+    <!-- Landing and Taxi Light fake cone -->
+    <animation>
+      <type>select</type>
+      <object-name>Cone-textureLM</object-name>
+      <condition>
+	<and>
+	  <not>
+	    <property>/sim/rendering/rembrandt/enabled</property>
+	  </not>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[2]</property>
+	    <value>0</value>
+	  </greater-than>
+	</and>
+      </condition>
+    </animation>
+    
+    <animation>
+      <type>select</type>
+      <object-name>Cone-textureTM</object-name>
+      <condition>
+	<and>
+	  <not>
+	    <property>/sim/rendering/rembrandt/enabled</property>
+	  </not>
+	  <property>sim/multiplay/generic/int[10]</property>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[2]</property>
+	    <value>0</value>
+	  </greater-than>
+	</and>
+      </condition>
+    </animation>
+    
+    <!--  Rembrand Landing and Taxi light -->    
+    
+    <animation>
+      <type>select</type>
+    <object-name>LightVolumeML</object-name>
+      <condition>
+	<and>
+	  <property>/sim/rendering/rembrandt/enabled</property>
+	    <property>sim/multiplay/generic/int[9]</property>
+	</and>
+      </condition>
+    </animation>
+    
+    <animation>
+      <type>select</type>
+    <object-name>LightVolumeMT</object-name>
+      <condition>
+	<and>
+	  <property>/sim/rendering/rembrandt/enabled</property>
+	    <property>sim/multiplay/generic/int[10]</property>
+	</and>
+      </condition>
+    </animation>
+    
+    <animation>
+      <type>light</type>
+      <light-type>spot</light-type>
+      <name>LandinglightM</name>
+      <object-name>LightVolumeML</object-name>
+      <position>
+	<x>-3.89</x>
+	<y> 0.0</y>
+	<z>-0.23</z>
+      </position>
+      <direction>
+	<x>-1059.1</x>
+	<y> 0.0</y>
+	<z>-188.182</z>
+      </direction>
+      <diffuse>
+	<r>1.0</r>
+	<g>0.922</g>
+	<b>0.545</b>
+	<a>1.0</a>
+      </diffuse>
+      <specular>
+	<r>1.0</r>
+	<g>1.0</g>
+	<b>1.0</b>
+	<a>1.0</a>
+      </specular>
+      <attenuation>
+	<c>1.0</c>
+	<l>0.002</l>
+	<q>0.00005</q>
+      </attenuation>
+      <exponent>15</exponent>
+      <near-m>0.05</near-m>
+      <far-m>2050</far-m>
+      <cutoff>2000</cutoff>
+    </animation>
+    
+    <animation>
+      <type>light</type>
+      <light-type>spot</light-type>
+      <name>TaxilightM</name>
+      <object-name>LightVolumeMT</object-name>
+      <position>
+	<x>-3.89</x>
+	<y> 0.0</y>
+	<z>-0.23</z>
+      </position>
+      <direction>
+	<x>-229.4</x>
+	<y> 0.0</y>
+	<z>-50.56</z>
+      </direction>
+      <diffuse>
+	<r>1.0</r>
+	<g>0.922</g>
+	<b>0.545</b>
+	<a>1.0</a>
+      </diffuse>
+      <specular>
+	<r>1.0</r>
+	<g>1.0</g>
+	<b>1.0</b>
+	<a>1.0</a>
+      </specular>
+      <attenuation>
+	<c>1.0</c>
+	<l>0.00001</l>
+	<q>0.0000015</q>
+      </attenuation>
+      <exponent>8</exponent>
+      <near-m>0.05</near-m>
+      <far-m>350</far-m>
+      <cutoff>250</cutoff>
+    </animation>
+    
+</PropertyList>
