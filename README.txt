@@ -1,4 +1,4 @@
-# Yak-58
+Yak-58
 
 for Flightgear Flightsimulator by Herbert Wagner 12/2017-2018
 
